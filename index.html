@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Souls Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+    <body>
+    <div class="container">
+        
+        <header class="header">
+            <h1 id="title">Favourite Souls Game Form</h1>
+            <p id="description">Thank you for taking your time to respond!</p>
+        </header>
+
+        <form id="survey-form">
+
+              <div class="group">
+                <label for="name-label" >Name<input id="name" type="text" required placeholder="Enter your name"></input></label>
+                </div>
+            
+              <div class="group">
+                <label for="email-label">Enter Your Email: <input id="email" name="email" type="email" required placeholder="Enter your email"></label>
+                </div>
+            
+              <div class="group">
+                <label for="number-label">Age(optional) <input id="number" type="number" min="1" max="99" placeholder="Age"></input></label>
+                </div>
+
+
+              <div class="group">
+                  <label for="dropdown"> What is the best Souls game: </label>
+                  <select id="dropdown">
+                    <option value="">Select an option</option>
+                          <option value="ds">Demon's Souls</option>
+                          <option value="ds1">Dark Souls 1</option>
+                          <option value="ds2">Dark Souls 2</option>
+                          <option value="ds3">Dark Souls 3</option>
+                          <option value="bb">BloodBorne</option>
+                          <option value="er">Elden Ring</option>
+                  </select>
+              </div>
+            
+            
+              <div class="group">
+                  <p>Would you recommend this game to a friend?</p>
+                  <input name="user-recommend" type="radio" value="definitely" checked>Definitely</input>
+                  <input name="user-recommend" type="radio" value="no" >No</input>
+                  <input name="user-recommend" type="radio" value="maybe">Maybe</input>
+              </div>
+
+            <div class="group">
+            <p>Select the gameplay elements you most appreciate in the franchise:</p>
+            <label>
+                  <input type="checkbox" name="gameplayElement" value="Challenging Difficulty">
+                  Challenging Difficulty
+            </label>
+            <br>
+            <label>
+                  <input type="checkbox" name="gameplayElement" value="Deep Combat Mechanics">
+                  Deep Combat Mechanics
+            </label>
+            <br>
+            <label>
+            <input type="checkbox" name="gameplayElement" value="Intricate Level Exploration">
+            Intricate Level Exploration
+            </label>
+            <br>
+            <label>
+                  <input type="checkbox" name="gameplayElement" value="Meaningful Character Development">
+                  Meaningful Character Development
+            </label>
+            <br>
+            <label>
+            <input type="checkbox" name="gameplayElement" value="Epic Boss Encounters">
+            Epic Boss Encounters
+            </label>
+            </div>
+
+            <div class="group">
+            <p>Any comments or suggestions?</p>
+            <textarea name="comment" id="comments" placeholder="Place your comments here..."></textarea>
+            </div>
+
+            <div class="group">
+            <button type="submit" id="submit"> Submit </button>
+            </div>    
+        </form>
+    </div>
+</body>
+</html>
